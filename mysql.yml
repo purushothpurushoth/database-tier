@@ -14,10 +14,8 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: mysql:latest
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              value: password
+          image: public.ecr.aws/e4a0x4z6/mysql-image
           ports:
             - containerPort: 3306
+         
         
